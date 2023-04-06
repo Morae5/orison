@@ -12,7 +12,7 @@ function App() {
     <>
       <>
         <NavBar />
-        <BrowserRouter>
+        <BrowserRouter basename={window.location.pathname || ''}>
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route exact path="/generic" element={<Generic />} />
