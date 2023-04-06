@@ -6,20 +6,102 @@ export default function Home() {
   return (
     <div id ="wrapper">
 		<div id="header" className="alt">
-			<h1>Stellar</h1>
-			<p>Testing out this template.<br />
-			Hope it works out :)</p>
+			<h1>Morae's Orison</h1>
+			<p>A simple website where I host my homebrew information for my DND campaign.
+				<br />
+				Please be gentle with typos and grammer mistakes.
+			</p>
 		</div>
 		<nav id="nav2">
 			<ul>
-				<li><a href="#intro" className="active">Introduction</a></li>
-				<li><a href="#first">First Section</a></li>
-				<li><a href="#second">Second Section</a></li>
-				<li><a href="#cta">Get Started</a></li>
+				<li><a href="#intro" className="active">Weave and Necrose</a></li>
+				<li><a href="#first">Beginning of Life</a></li>
+				<li><a href="#second">Articles</a></li>
+				{/* <li><a href="#cta">Get Started</a></li> */}
 			</ul>
 		</nav>
 		<div id="main">
-				<section id="intro" className="main">
+			<section id="intro" className="main special">
+				<div className="content">
+					<header className="major">
+						<h2>Weave and Necrose</h2>
+					</header>
+					<p>
+						Every creature, object, and some even time in this universe is made of the weave. The name came from the thread-like appearance
+						it takes which many have nicknamed it as the golden thread of life. The origns of these threads come from a giant white sun known 
+						as the Iris where instead of giving off light, the weave sprouts from it and travels to the coners of the universe. No one knows 
+						how it came to be and how it contiously dispenses the weave from within. With the weave so intricated into the fabric of reality, 
+						many can even predict the future by seeing the direction of where it is going.
+						<br/>
+						<br/>
+						With every light, there is darkness. A substance called the necrose eats away the weave by infecting a host and consuming the 
+						host's weave. When the necrose gets strong enough, it can move on its own to get weave from another source. Some would call it 
+						a creature with how it shows sentience while others see it as a disease. However, mortals are not affected affected by the necrose 
+						since they already have some form of dormant necrose within them, making them have resistance. Even though the races scattered
+						across the material plane are resistant to being infected by the necrose, it does not mean they are immune to being engulfed and
+						drained of their weave. Every corner of the universe fights to survive against the necrose as they try to live their lives under the 
+						guidance of the weave.
+					</p>
+				</div>
+			</section>
+			<section id="first" className="main special">
+				<div className="content">
+					<header className="major">
+						<h2>Beginning of Life</h2>
+					</header>
+					<p>
+						In the beginning, there was the Iris, Plane of Chaos, and the Plane of Law, and the beings to come into existance first were the 
+						gods and the creatures of the inner and outer planes. When the planes of law and chaos collided. Planes and their respective 
+						residents formed interteining energies. Around the same time, gods came out from the Iris. The gods and the planar creatures all
+						knew what their purpose was as if being lead from an outside force.
+						<br />
+						<br />
+						The next to come were the dragons and the plants and animals. It is believed they are the byproduct from the creation of gods and
+						the collision of the Law and Chaos planes. However, the weave and power difference between the dragons and natural creatures has 
+						confused many scholars on how their actual creation happened. By this time, the gods and the elemental plane has created planets
+						where these new creations to live on.
+						<br />
+						<br />
+						The last creations to come from the birth of this universe are the mortals such as humans and elves. Some believe the gods have 
+						created them while some others believe that they are debris leftover from the collision. In the end, the creation of mortals is a 
+						mystery on they came to be especially with their unique composition of having necrose within them.
+					</p>
+				</div>
+			</section>
+			<section id="second" className="main special">
+				<header className="major">
+					<h2>Articles</h2>
+				</header>
+				<div style={{justifyContent: 'center', width: '100%'}}>
+					<div style={{display: 'table', width: '100%'}}>
+						<div style={{width:'33.3%', float:'left'}}>
+							<h3 >Plane of Chaos</h3>
+							<h4 >Fey Wild</h4>
+							<h4 >Underdark</h4>
+							<h4 >Elemental Planes</h4>
+						</div>
+						<div style={{width:'33.3%', float:'left'}}>
+							<h3 >Plane of Law</h3>
+							<h4 >Planes of Death</h4>
+							<h4 >Realm of Dreams</h4>
+						</div>
+						<div style={{width:'33.3%', float:'left'}}>
+							<h3 >Material Plane</h3>
+							<h4 >Races</h4>
+							<h4 >Classes</h4>
+						</div>
+					</div>
+					<div style={{display: 'table', width: '100%', marginTop: '1.1em'}}>
+						<div style={{width:'49%', float:'left'}}>
+							<h3 >Void</h3>
+						</div>
+						<div style={{width:'49%', float:'left'}}>
+							<h3 >Universes</h3>
+						</div>
+					</div>
+				</div>
+			</section>
+				{/* <section id="intro" className="main">
 					<div className="spotlight">
 						<div className="content">
 							<header className="major">
@@ -34,8 +116,8 @@ export default function Home() {
 						</div>
 						<span className="image"><img src="images/pic01.jpg" alt="" /></span>
 					</div>
-				</section>
-				<section id="first" className="main special">
+				</section>  */}
+				{/* <section id="first" className="main special">
 					<header className="major">
 						<h2>Magna veroeros</h2>
 					</header>
@@ -109,7 +191,7 @@ export default function Home() {
 							<li><a href="generic.html" className="button">Learn More</a></li>
 						</ul>
 					</footer>
-				</section>
+				</section> */}
 		</div>
     </div>
   )
