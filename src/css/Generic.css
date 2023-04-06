@@ -1,0 +1,346 @@
+#page {
+    background-color: #ffffff;
+    color: #636363;
+    padding-left: 350px;
+    margin-bottom: 150px;
+}
+
+#page input, #page select, #page textarea {
+    color: #636363;
+}
+
+#page a:hover {
+    color: #636363;
+}
+
+#page strong, #page b {
+    color: #636363;
+}
+
+#page h1, #page h2, #page h3, #page h4, #page h5, #page h6 {
+    color: #636363;
+}
+
+#page blockquote {
+    border-left-color: #dddddd;
+}
+
+#page code {
+    background: rgba(222, 222, 222, 0.25);
+    border-color: #dddddd;
+}
+
+#page hr {
+    border-bottom-color: #dddddd;
+}
+
+#page .box {
+    border-color: #dddddd;
+}
+
+#page input[type="submit"],
+#page input[type="reset"],
+#page input[type="button"],
+#page button,
+#page .button {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 1px #dddddd;
+    color: #636363 !important;
+}
+
+    #page input[type="submit"]:hover,
+    #page input[type="reset"]:hover,
+    #page input[type="button"]:hover,
+    #page button:hover,
+    #page .button:hover {
+        background-color: rgba(222, 222, 222, 0.25);
+    }
+
+    #page input[type="submit"]:active,
+    #page input[type="reset"]:active,
+    #page input[type="button"]:active,
+    #page button:active,
+    #page .button:active {
+        background-color: rgba(222, 222, 222, 0.5);
+    }
+
+    #page input[type="submit"].icon:before,
+    #page input[type="reset"].icon:before,
+    #page input[type="button"].icon:before,
+    #page button.icon:before,
+    #page .button.icon:before {
+        color: rgba(99, 99, 99, 0.25);
+    }
+
+    #page input[type="submit"].primary,
+    #page input[type="reset"].primary,
+    #page input[type="button"].primary,
+    #page button.primary,
+    #page .button.primary {
+        background-color: #8cc9f0;
+        color: #ffffff !important;
+        box-shadow: none;
+    }
+
+        #page input[type="submit"].primary:hover,
+        #page input[type="reset"].primary:hover,
+        #page input[type="button"].primary:hover,
+        #page button.primary:hover,
+        #page .button.primary:hover {
+            background-color: #9acff2;
+        }
+
+        #page input[type="submit"].primary:active,
+        #page input[type="reset"].primary:active,
+        #page input[type="button"].primary:active,
+        #page button.primary:active,
+        #page .button.primary:active {
+            background-color: #7ec3ee;
+        }
+
+        #page input[type="submit"].primary.icon:before,
+        #page input[type="reset"].primary.icon:before,
+        #page input[type="button"].primary.icon:before,
+        #page button.primary.icon:before,
+        #page .button.primary.icon:before {
+            color: #ffffff !important;
+        }
+
+#page label {
+    color: #636363;
+}
+
+#page input[type="text"],
+#page input[type="password"],
+#page input[type="email"],
+#page select,
+#page textarea {
+    background-color: rgba(222, 222, 222, 0.25);
+    border-color: #dddddd;
+}
+
+    #page input[type="text"]:focus,
+    #page input[type="password"]:focus,
+    #page input[type="email"]:focus,
+    #page select:focus,
+    #page textarea:focus {
+        border-color: #8cc9f0;
+        box-shadow: 0 0 0 1px #8cc9f0;
+    }
+
+#page select {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='%23dddddd' /%3E%3C/svg%3E");
+}
+
+    #page select option {
+        color: #636363;
+        background: #ffffff;
+    }
+
+#page input[type="checkbox"] + label,
+#page input[type="radio"] + label {
+    color: #636363;
+}
+
+    #page input[type="checkbox"] + label:before,
+    #page input[type="radio"] + label:before {
+        background: rgba(222, 222, 222, 0.25);
+        border-color: #dddddd;
+    }
+
+#page input[type="checkbox"]:checked + label:before,
+#page input[type="radio"]:checked + label:before {
+    background-color: #636363;
+    border-color: #636363;
+    color: #ffffff;
+}
+
+#page input[type="checkbox"]:focus + label:before,
+#page input[type="radio"]:focus + label:before {
+    border-color: #8cc9f0;
+    box-shadow: 0 0 0 1px #8cc9f0;
+}
+
+#page ::-webkit-input-placeholder {
+    color: rgba(99, 99, 99, 0.25) !important;
+}
+
+#page :-moz-placeholder {
+    color: rgba(99, 99, 99, 0.25) !important;
+}
+
+#page ::-moz-placeholder {
+    color: rgba(99, 99, 99, 0.25) !important;
+}
+
+#page :-ms-input-placeholder {
+    color: rgba(99, 99, 99, 0.25) !important;
+}
+
+#page .formerize-placeholder {
+    color: rgba(99, 99, 99, 0.25) !important;
+}
+
+#page .icon.major {
+    border-color: #dddddd;
+}
+
+    #page .icon.major:before {
+        border-color: #dddddd;
+    }
+
+#page .icon.alt {
+    border-color: #dddddd;
+    color: #636363;
+}
+
+    #page .icon.alt:hover {
+        background-color: rgba(222, 222, 222, 0.25);
+    }
+
+    #page .icon.alt:active {
+        background-color: rgba(222, 222, 222, 0.5);
+    }
+
+#page ul.alt li {
+    border-top-color: #dddddd;
+}
+
+#page dl dt {
+    color: #636363;
+}
+
+#page header.major h2:after {
+    background-color: #dddddd;
+    background-image: -moz-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+    background-image: -webkit-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+    background-image: -ms-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+    background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+}
+
+#page table tbody tr {
+    border-color: #dddddd;
+}
+
+    #page table tbody tr:nth-child(2n + 1) {
+        background-color: rgba(222, 222, 222, 0.25);
+    }
+
+#page table th {
+    color: #636363;
+}
+
+#page table thead {
+    border-bottom-color: #dddddd;
+}
+
+#page table tfoot {
+    border-top-color: #dddddd;
+}
+
+#page table.alt tbody tr td {
+    border-color: #dddddd;
+}
+
+#page .spotlight .image {
+    border-color: #dddddd;
+}
+
+#page > .main {
+    padding: 5em 5em 3em 5em ;
+    border-top: solid 1px #dddddd;
+}
+
+    #page > .main:first-child {
+        border-top: 0;
+    }
+
+    #page > .main > .image.main:first-child {
+        margin: -5em 0 5em -5em;
+        width: calc(100% + 10em);
+        border-top-right-radius: 0.25em;
+        border-top-left-radius: 0.25em;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+        #page > .main > .image.main:first-child img {
+            border-top-right-radius: 0.25em;
+            border-top-left-radius: 0.25em;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+
+@media screen and (max-width: 1280px) {
+
+    #page > .main {
+        padding: 4em 4em 2em 4em ;
+    }
+
+        #page > .main > .image.main:first-child {
+            margin: -4em 0 4em -4em;
+            width: calc(100% + 8em);
+        }
+
+}
+
+@media screen and (max-width: 980px) {
+
+    #page > .main {
+        padding: 4em 3em 2em 3em ;
+    }
+
+        #page > .main > .image.main:first-child {
+            margin: -4em 0 4em -3em;
+            width: calc(100% + 6em);
+        }
+
+}
+
+@media screen and (max-width: 736px) {
+
+    #page > .main {
+        padding: 3em 2em 1em 2em ;
+    }
+
+        #page > .main > .image.main:first-child {
+            margin: -3em 0 2em -2em;
+            width: calc(100% + 4em);
+        }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    #page > .main {
+        padding: 3em 1.5em 1em 1.5em ;
+    }
+
+        #page > .main > .image.main:first-child {
+            margin: -3em 0 1.5em -1.5em;
+            width: calc(100% + 3em);
+        }
+
+}
+
+@media screen and (max-width: 360px) {
+
+    #page {
+        border-radius: 0;
+    }
+
+        #page > .main {
+            padding: 2.5em 1em 0.5em 1em ;
+        }
+
+            #page > .main > .image.main:first-child {
+                margin: -2.5em 0 1.5em -1em;
+                width: calc(100% + 2em);
+                border-radius: 0;
+            }
+
+                #page > .main > .image.main:first-child img {
+                    border-radius: 0;
+                }
+
+}
