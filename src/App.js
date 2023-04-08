@@ -14,7 +14,7 @@ function App() {
         <NavBar />
         <BrowserRouter>
           <Routes>
-            <Route exact path="/orison" element={<Home />} />
+            <Route exact path="/orison/" element={<Home />} />
             <Route exact path="/orison/generic" element={<Generic />} />
           </Routes>
         </BrowserRouter>
