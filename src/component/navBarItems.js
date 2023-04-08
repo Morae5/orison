@@ -1,7 +1,7 @@
 export const navBarItems = [
   {
     title: 'Genric',
-    url: '/generic'
+    url: '/orison/generic'
   }
     // {
     //   title: 'Generic',

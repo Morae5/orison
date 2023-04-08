@@ -12,10 +12,10 @@ function App() {
     <>
       <>
         <NavBar />
-        <BrowserRouter basemname={`/${process.env.PUBLIC_URL}`}>
+        <BrowserRouter>
           <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route exact path="/generic" element={<Generic />} />
+            <Route exact path="/orison" element={<Home />} />
+            <Route exact path="/orison/generic" element={<Generic />} />
           </Routes>
         </BrowserRouter>
         {/* <Footer /> */}
