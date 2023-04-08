@@ -40,7 +40,7 @@ export default function NavBar() {
     <div>
         <header id="header2" className={className}>
             <nav id="nav"> 
-                <h1><a href="/">Orison</a></h1>
+                <h1><a href="/orison/">Orison</a></h1>
                 <div id="menus" className={className}>
                     <ul>
                         {navBarItems.map((menu, index) => {
