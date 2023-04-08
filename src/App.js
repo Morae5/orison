@@ -4,7 +4,7 @@ import Footer from './component/Footer';
 import Script from './component/Scripts';
 import Home from './pages/landing-page/Home';
 import NavBar from './component/NavBar';
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Generic from './pages/info-page/Generic';
 
 function App() {
@@ -12,12 +12,12 @@ function App() {
     <>
       <>
         <NavBar />
-        <HashRouter>
+        <BrowserRouter basemname={`/${process.env.PUBLIC_URL}`}>
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route exact path="/generic" element={<Generic />} />
           </Routes>
-        </HashRouter>
+        </BrowserRouter>
         {/* <Footer /> */}
       </>
       <Script />

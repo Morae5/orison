@@ -1,7 +1,7 @@
 export const navBarItems = [
   {
-    title: '',
-    url: ''
+    title: 'Genric',
+    url: '/generic'
   }
     // {
     //   title: 'Generic',
