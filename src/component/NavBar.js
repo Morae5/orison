@@ -53,7 +53,7 @@ export default function NavBar() {
                     <ul>
                         <li className="special">
                             <button className={classNames} onClick={viewNavBar} style={{backgroundColor: toggleNavBar===true? 'rgba(255, 255, 255, 0.2)':'inherit'}}>
-                                <img src="https://morae5.github.io/orison/images/bars.svg" alt="menu" className="bars"></img>
+                                <img src="https://morae5.github.io/orison/images/white_bars.svg" alt="menu" className="bars"></img>
                             </button>
                         </li>
                     </ul>
