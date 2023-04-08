@@ -12,7 +12,7 @@ function App() {
     <>
       <>
         <NavBar />
-        <BrowserRouter basename="/orison">
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route exact path="/generic" element={<Generic />} />
