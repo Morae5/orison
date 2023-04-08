@@ -15,7 +15,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route exact path="/orison/" element={<Home />} />
-            <Route exact path="/orison/generic" element={<Generic />} />
+            <Route exact path="/orison/generic/" element={<Generic />} />
           </Routes>
         </BrowserRouter>
         {/* <Footer /> */}
