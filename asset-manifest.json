@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/orison/static/css/main.ff36eddc.css",
-    "main.js": "/orison/static/js/main.b2857cb4.js",
+    "main.css": "/orison/static/css/main.9e922a4d.css",
+    "main.js": "/orison/static/js/main.991253db.js",
     "static/js/787.63d9c444.chunk.js": "/orison/static/js/787.63d9c444.chunk.js",
     "index.html": "/orison/index.html",
-    "main.ff36eddc.css.map": "/orison/static/css/main.ff36eddc.css.map",
-    "main.b2857cb4.js.map": "/orison/static/js/main.b2857cb4.js.map",
+    "main.9e922a4d.css.map": "/orison/static/css/main.9e922a4d.css.map",
+    "main.991253db.js.map": "/orison/static/js/main.991253db.js.map",
     "787.63d9c444.chunk.js.map": "/orison/static/js/787.63d9c444.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff36eddc.css",
-    "static/js/main.b2857cb4.js"
+    "static/css/main.9e922a4d.css",
+    "static/js/main.991253db.js"
   ]
 }
