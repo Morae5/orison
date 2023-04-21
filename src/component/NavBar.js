@@ -4,6 +4,8 @@ import { navBarItems } from './navBarItems';
 import MenuItems from './MenuItems';
 import { useNavigate } from 'react-router-dom';
 
+
+//fix when Justins aspect ratio wont allow to smoothly select nav items
 export default function NavBar() {
     const[className, setClassName]=useState("alt");
     const[toggleNavBar, setToggleNavBar]=useState(false);
@@ -49,7 +51,7 @@ export default function NavBar() {
             <nav id="nav"> 
                 <h1><a href="/orison" onClick={handleClick}>Orison</a></h1>
                 <div id="menus" className={className}>
-                    <ul>
+                    <ul className = "arrayMenuItems">
                         {navBarItems.map((menu, index) => {
                             const depthLevel = 0;
                             return <MenuItems items={menu} key={index} depthLevel={depthLevel}/>;

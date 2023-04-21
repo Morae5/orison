@@ -56,3 +56,19 @@ h2, h3, h4 {
         margin-top: -2.5em;
     }
 }
+
+@media screen and (max-width: 1280px) {
+	.tocBackground {
+        width: 250px;
+    }
+
+    .toc {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+	.toc-main {
+        display: none;
+	}
+}

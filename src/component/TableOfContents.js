@@ -29,7 +29,7 @@ export default function TableOfContents() {
     }
 
     return (
-        <>
+        <div className="toc-main">
             <div className="tocBackground"/>
             <nav className="toc">
                 <ul>
@@ -51,6 +51,6 @@ export default function TableOfContents() {
                     ))}
                 </ul>
             </nav>
-        </>
+        </div>
     )
 }
