@@ -1,22 +1,36 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import {useLocation} from 'react-router-dom'
 import '../../css/Footer.css'
 
 export default function Home() {
+	const location = useLocation();
+  	const hash = location.hash.slice(1);
+
+	useEffect(() => {
+		const scrollToHash = () => {
+		if(hash) {
+			const target = document.getElementById(hash);
+			if(target) {
+			target.scrollIntoView()
+			}
+		} else {
+			window.scroll(0, 0);
+		};
+		}
+
+		scrollToHash();
+	}, [hash]);
 
   return (
     <div id ="wrapper">
 		<div id="header" className="alt">
 			<h1>Morae's Orison</h1>
-			<p>A simple website where I host my homebrew information for my DND campaign.
-				<br />
-				Please be gentle with typos and grammer mistakes.
-			</p>
 		</div>
 		<nav id="nav2">
 			<ul>
-				<li><a href="#intro" className="active">Weave and Necrose</a></li>
-				<li><a href="#first">Beginning of Life</a></li>
-				<li><a href="#second">Articles</a></li>
+				<li><a href="#intro" className="active">Intro</a></li>
+				{/* <li><a href="#beginning">The Beginning</a></li> */}
+				<li><a href="#articles">Articles</a></li>
 				{/* <li><a href="#cta">Get Started</a></li> */}
 			</ul>
 		</nav>
@@ -24,9 +38,20 @@ export default function Home() {
 			<section id="intro" className="main special">
 				<div className="content">
 					<header className="major">
-						<h2>Weave and Necrose</h2>
+						<h2>Intro</h2>
 					</header>
 					<p>
+						Hello. This is a roughly put together website that I made for my hombrew campaign in DND 5e. This campaign includes different worlds 
+						with their own gods affliated with them. I also changed around how the different realms work, such as the FeyWild and Elemental Planes.
+						<br/>
+						<br/>
+						My plans for this website is be a place for my players use as a reference for looking up lore and maybe inspiration for their next
+						character. I even plan to make a different website for each of the "main" planets.
+						<br/>
+						<br/>
+						I never did well in English class so please be easy when it comes to grammer or spelling mistakes :)
+					</p>
+					{/* <p>
 						Every creature, object, and some even time in this universe is made of the weave. The name came from the thread-like appearance
 						it takes which many have nicknamed it as the golden thread of life. The origns of these threads come from a giant white sun known 
 						as the Iris where instead of giving off light, the weave sprouts from it and travels to the coners of the universe. No one knows 
@@ -41,13 +66,13 @@ export default function Home() {
 						across the material plane are resistant to being infected by the necrose, it does not mean they are immune to being engulfed and
 						drained of their weave. Every corner of the universe fights to survive against the necrose as they try to live their lives under the 
 						guidance of the weave.
-					</p>
+					</p> */}
 				</div>
 			</section>
-			<section id="first" className="main special">
+			{/* <section id="beginning" className="main special">
 				<div className="content">
 					<header className="major">
-						<h2>Beginning of Life</h2>
+						<h2>The Beginning</h2>
 					</header>
 					<p>
 						In the beginning, there was the Iris, Plane of Chaos, and the Plane of Law, and the beings to come into existance first were the 
@@ -67,11 +92,14 @@ export default function Home() {
 						mystery on they came to be especially with their unique composition of having necrose within them.
 					</p>
 				</div>
-			</section>
-			<section id="second" className="main special">
+			</section> */}
+			<section id="articles" className="main special">
 				<header className="major">
 					<h2>Articles</h2>
 				</header>
+				<p>
+					Need to update this list.
+				</p>
 				<div style={{justifyContent: 'center', width: '100%'}}>
 					<div style={{display: 'table', width: '100%'}}>
 						<div style={{width:'33.3%', float:'left'}}>

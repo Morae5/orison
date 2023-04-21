@@ -1,8 +1,27 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import {useLocation} from 'react-router-dom'
 import TableOfContents from '../../component/TableOfContents'
 import '../../css/Generic.css'
 
 export default function Generic() {
+  const location = useLocation();
+  const hash = location.hash.slice(1);
+
+  useEffect(() => {
+    const scrollToHash = () => {
+      if(hash) {
+        const target = document.getElementById(hash);
+        if(target) {
+          target.scrollIntoView()
+        }
+      } else {
+        window.scroll(0, 0);
+      };
+    }
+
+    scrollToHash();
+  }, [hash]);
+
   return (
     <>
         <header id="header">

@@ -1,12 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import '../css/TableOfContents.css'
-import { useHeadsObserver } from './observer/useHeadsObserver'
-
 
 //Make table collapsable when window small enough
 export default function TableOfContents() {
     const [headings, setHeadings] = useState([])
-    const {activeId} = useHeadsObserver()
 
     useEffect(() => {
         const elements = Array.from(document.querySelectorAll("h2, h3, h4"))
@@ -44,7 +41,7 @@ export default function TableOfContents() {
                                     behavior: "smooth"
                                 })}}
                                 style={{
-                                    fontWeight: activeId === heading.id ? "bold" : "normal",
+                                    fontWeight: "normal",
                                     borderBottom: "none"
                                 }}
                             >

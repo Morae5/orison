@@ -2,11 +2,18 @@ import React, {useEffect, useState} from 'react'
 import '../css/NavBar.css'
 import { navBarItems } from './navBarItems';
 import MenuItems from './MenuItems';
+import { useNavigate } from 'react-router-dom';
 
 export default function NavBar() {
     const[className, setClassName]=useState("alt");
     const[toggleNavBar, setToggleNavBar]=useState(false);
     const[classNames, setClassNames]=useState("menuToggle");
+    const navigate = useNavigate();
+
+    function handleClick (event) {
+        event.preventDefault();
+        navigate("/");
+    }
 	
 	function toggleNavBarVisiblity() {
         const currentScrollPos = window.scrollY;
@@ -40,7 +47,7 @@ export default function NavBar() {
     <div>
         <header id="header2" className={className}>
             <nav id="nav"> 
-                <h1><a href="/">Orison</a></h1>
+                <h1><a href="/orison" onClick={handleClick}>Orison</a></h1>
                 <div id="menus" className={className}>
                     <ul>
                         {navBarItems.map((menu, index) => {
@@ -53,7 +60,7 @@ export default function NavBar() {
                     <ul>
                         <li className="special">
                             <button className={classNames} onClick={viewNavBar} style={{backgroundColor: toggleNavBar===true? 'rgba(255, 255, 255, 0.2)':'inherit'}}>
-                                <img src="../../assets/css/images/bars.svg" alt="menu" className="bars"></img>
+                                <img src="https://morae5.github.io/orison/images/white_bars.svg" alt="menu" className="bars"></img>
                             </button>
                         </li>
                     </ul>
