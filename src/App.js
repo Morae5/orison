@@ -1,22 +1,22 @@
 import React from 'react';
 import './App.css';
-import Footer from './component/Footer';
+// import Footer from './component/Footer';
 import Script from './component/Scripts';
 import Home from './pages/landing-page/Home';
 import NavBar from './component/NavBar';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Generic from './pages/info-page/Generic';
+import Creation from './pages/info-page/Creation/Creation'
 
 function App() {
   return (
     <>
       <>
-        <NavBar />
         <BrowserRouter basename={process.env.PUBLIC_URL}>
           <Routes>
             <Route exact path="/" element={<Home />} />
-            <Route exact path="/generic" element={<Generic />} />
+            <Route exact path="/creation" element={<Creation />} />
           </Routes>
+          <NavBar />
         </BrowserRouter>
         {/* <Footer /> */}
       </>
