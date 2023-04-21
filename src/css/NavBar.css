@@ -26,13 +26,13 @@
 	padding: 0;
 }
 
-@media screen and (max-width: 736px) {
+ @media screen and (max-width: 736px) {
 
 	#menu {
 		padding: 3em 1.5em;
 	}
 
-}
+} 
 
 body.is-menu-visible #page-wrapper {
 	opacity: 0.35;
@@ -88,13 +88,13 @@ body.is-menu-visible #menu {
 	line-height: inherit;
 }
 
-@media screen and (max-width: 736px) {
+ @media screen and (max-width: 736px) {
 
 	#header2 h1 a {
 		font-size: 0.8em;
 	}
 
-}
+} 
 
 #header2 nav {
 	height: inherit;
@@ -148,7 +148,7 @@ body.is-menu-visible #menu {
 	background-color: rgba(255, 255, 255, 0.2);
 }
 
-@media screen and (max-width: 736px) {
+ @media screen and (max-width: 736px) {
 
 	#header2 nav > div > ul > li > a.menuToggle {
 		padding: 0 1.5em;
@@ -166,7 +166,7 @@ body.is-menu-visible #menu {
 		padding: 0 0 0 1.5em;
 	}
 
-}
+} 
 
 #header2 nav > div> ul > li:first-child {
 	margin-left: 0;
@@ -232,7 +232,7 @@ a {
 	position: absolute;
 	left: calc(100% + 3.8em);
 	top: 0px;
-	font-size: 16px;
+	font-size: inherit;
   }
 
   .menu-items {
@@ -281,11 +281,11 @@ a {
   .arrow.custom {
 	display: none;
   }
-  @media (min-width: 960px) {
+   @media (min-width: 960px) {
 	.arrow.custom {
 	  display: block;
 	}
-  }
+  } 
 
   .menus {
 	display: flex;
@@ -313,5 +313,31 @@ a.ref {
 	height: 44px;
 	display: flex;
   	align-items: center;
+}
+
+@media screen and (max-width: 736px) {
+	.arrayMenuItems {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1680px) {
+	.dropdown {
+		font-size: 12pt;
+		top: 41px;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.dropdown {
+		font-size: 10pt;
+		top: 39px;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	.dropdown {
+		font-size: 9pt;
+	}
 }
   
