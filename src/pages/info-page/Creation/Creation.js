@@ -4,7 +4,7 @@ import TableOfContents from '../../../component/TableOfContents'
 import '../../../css/Generic.css'
 import Link from '../../../component/Link'
 
-export default function Generic() {
+export default function Creation() {
   const location = useLocation();
   const hash = location.hash.slice(1);
 

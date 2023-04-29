@@ -4,6 +4,10 @@ export const navBarItems = [
     url: '/creation'
   },
   {
+    title: 'Void',
+    url: '/void'
+  },
+  {
     title: "Law",
     url: '',
     submenu : [
@@ -118,10 +122,6 @@ export const navBarItems = [
         ]
       }
     ]
-  },
-  {
-    title: 'Void',
-    url: ''
   }, 
   {
     title: "Universe",
