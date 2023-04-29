@@ -54,7 +54,7 @@ body.is-menu-visible #menu {
 	-webkit-transition: background-color 0.2s ease;
 	-ms-transition: background-color 0.2s ease;
 	transition: background-color 0.2s ease;
-	background: #102C37;
+	background: #30124E;
 	height: 3em;
 	left: 0;
 	line-height: 3em;
@@ -217,7 +217,7 @@ a {
 	z-index: 9999;
 	padding: 0;
 	list-style: none;
-	background-color: #1B4252; 
+	background-color: #462468; 
 	border-radius: 0.5rem;
 	font-size: 16px;
 	top: 55px;
