@@ -230,7 +230,7 @@ a {
   
   .dropdown .dropdown-submenu {
 	position: absolute;
-	left: calc(100% + 3.8em);
+	left: calc(100% + 1em);
 	top: 0px;
 	font-size: inherit;
   }

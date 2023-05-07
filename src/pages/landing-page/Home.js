@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react'
 import {useLocation} from 'react-router-dom'
 import '../../css/Footer.css'
+import Link from '../../component/Link' 
 
 export default function Home() {
 	const location = useLocation();
@@ -109,14 +110,19 @@ export default function Home() {
 							<h4 >Elemental Planes</h4>
 						</div>
 						<div style={{width:'33.3%', float:'left'}}>
-							<h3 >Plane of Law</h3>
-							<h4 >Planes of Death</h4>
-							<h4 >Realm of Dreams</h4>
+							<h3 ><Link link="/law" title ="Plane of Law"/></h3>
+							<h4 ><Link link="/law/afterlife" title ="Afterlife" /></h4>
+							<h4 ><Link link="/law/mechanus" title ="Mechanus" /></h4>
+							<h4 ><Link link="/law/plane-of-dreams" title ="Plane of Dreams" /></h4>
+							<h4 ><Link link="/law/nirvana" title ="Nirvana" /></h4>
+							<h4 ><Link link="/law/library-of-all-knowledge" title ="Library of All Knowledge" /></h4>
 						</div>
 						<div style={{width:'33.3%', float:'left'}}>
 							<h3 >Material Plane</h3>
 							<h4 >Races</h4>
+							<h5>Human</h5>
 							<h4 >Classes</h4>
+							<h5>Fighter</h5>
 						</div>
 					</div>
 					<div style={{display: 'table', width: '100%', marginTop: '1.1em'}}>
