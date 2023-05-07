@@ -9,27 +9,27 @@ export const navBarItems = [
   },
   {
     title: "Law",
-    url: '',
+    url: '/law',
     submenu : [
       {
-        title: "Death",
-        url: ""
+        title: "Afterlife",
+        url: "/law/afterlife"
       },
       {
-        title: "Dreams",
-        url: ""
+        title: "Mechanus",
+        url: "/law/mechanus"
       },
       {
-        title: "Time",
-        url: ""
+        title: "Plane of Dreams",
+        url: "/law/plane-of-dreams"
       },
       {
-        title: "Knowledge",
-        url: ""
+        title: "Nirvana",
+        url: "/law/nirvana"
       },
       {
-        title: "Judgement",
-        url: ""
+        title: "Library of All Knowledge",
+        url: "/law/library-of-all-knowledge"
       }
     ]
   },

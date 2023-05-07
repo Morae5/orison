@@ -8,9 +8,9 @@ const Dropdown = ({ submenus, dropdown, depthLevel }) => {
     return (
         <ul className={`dropdown ${dropdownClass} ${dropdown ? "show" : "top"}`}>
         {submenus.map((submenu, index) => (
-          <li key={index} className="menu-items">
+          <div key={index} className="menu-items" style={{marginRight: "-0.5em"}}>
             <MenuItems items={submenu} key={index} depthLevel={depthLevel}/>
-          </li>
+          </div>
         ))}
       </ul>
     );
